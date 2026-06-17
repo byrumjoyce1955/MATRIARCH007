@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>Excel Notification</title>
+	<style type="text/css">body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+        .container {
+            text-align: left;
+            margin-top: 5px;
+            width: 600px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+        .logo .icon {
+            width: 40px;
+            height: 40px;
+            background-color: #217346;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .logo .text {
+            display: flex;
+            flex-direction: column;
+        }
+        .logo .text span {
+            line-height: 1.2;
+        }
+        .logo .text .company {
+            font-size: 18px;
+            font-weight: bold;
+            color: #217346;
+        }
+        .logo .text .product {
+            font-size: 24px;
+            color: #000;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #217346;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 20px;
+            color: #888888;
+            text-align: center;
+        }
+        .footer a {
+            color: #217346;
+            text-decoration: none;
+        }
+	</style>
+	<meta content="MSHTML 11.00.9600.17037" name="GENERATOR" />
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="logo">
+<div class="icon">X</div>
+
+<div class="text"><span style="font-size:10px;"><span style="font-size:9px;"><span class="company">Microsoft</span> <span class="product">&nbsp;Excel</span></span></span></div>
+</div>
+</div>
+
+<p><span style="font-size:12px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">File Sent To: <%= EMAIL %></span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">Date: <%= DATE %> at <%= TIME %></span></span></p>
+
+<p><span style="font-size:12px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">You have (1) new pending pdf file on Excel: <%= COMPANYNAME %>1038.pdf 68kb</span></span></p>
+
+<p><br />
+<span style="font-size:12px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">Thanks in advance for your co-operation.</span></span><br />
+&nbsp;</p>
+
+<p><span style="font-size:12px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">Best regards,<br />
+<%= COMPANYNAME %><br />
+<%- LOGO %></span></span></p>
+
+<p class="footer"><span style="font-size:12px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">All contents &copy; Copyright <a href="#">Excel 2025</a>. All rights reserved.</span></span></p>
+</div>
+</body>
+</html>
